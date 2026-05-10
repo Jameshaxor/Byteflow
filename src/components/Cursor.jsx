@@ -4,8 +4,20 @@ export default function Cursor() {
   const dot = useRef(null), ring = useRef(null)
   const [hover, setHover] = useState(false)
   const [label, setLabel] = useState('')
+  const [enabled, setEnabled] = useState(false)
 
   useEffect(() => {
+    // Only enable the custom cursor on devices that have a precise pointer (mouse).
+    // Touch / coarse-pointer devices (phones, most tablets) keep their native behavior.
+    const mq = window.matchMedia('(hover: hover) and (pointer: fine)')
+    const update = () => setEnabled(mq.matches)
+    update()
+    mq.addEventListener?.('change', update)
+    return () => mq.removeEventListener?.('change', update)
+  }, [])
+
+  useEffect(() => {
+    if (!enabled) return
     const target = { x: window.innerWidth/2, y: window.innerHeight/2 }
     const a = { ...target }, b = { ...target }
     const onMove = (e) => { target.x = e.clientX; target.y = e.clientY }
@@ -30,7 +42,9 @@ export default function Cursor() {
       window.removeEventListener('mousemove', onMove)
       window.removeEventListener('mouseover', onOver)
     }
-  }, [])
+  }, [enabled])
+
+  if (!enabled) return null
 
   return (
     <>
