@@ -14,7 +14,7 @@ const team = [
     photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85',
   },
   {
-    name: 'Ankit',
+    name: 'Ankit Nag',
     role: 'Client Lead · Co-founder',
     handle: '@ankit.byteflow',
     badge: 'Talks to humans',
