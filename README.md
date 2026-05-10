@@ -1,4 +1,4 @@
-# Portfolio — Awwwards-style
+# Portfolio — Byteflow Creatives
 
 Independent studio portfolio built with React + Vite, GSAP + ScrollTrigger, Lenis smooth scroll, Framer Motion, and Tailwind CSS.
 
