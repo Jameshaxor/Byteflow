@@ -38,7 +38,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-16 select-none pointer-events-none">
-        <div className="display text-[18vw] leading-[1.1] tracking-tightest text-center text-bone/[0.06] whitespace-nowrap py-6">
+        <div className="display text-[16vw] leading-[1.15] tracking-tightest text-center text-bone/10 whitespace-nowrap py-6">
           BYTEFLOW
         </div>
       </div>
