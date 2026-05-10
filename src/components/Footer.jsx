@@ -37,8 +37,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-16 -mx-6 md:-mx-10 overflow-hidden select-none pointer-events-none">
-        <div className="display text-[24vw] leading-[0.78] tracking-tightest text-center text-bone/[0.04]">
+      <div className="mt-16 -mx-6 md:-mx-10 overflow-hidden select-none pointer-events-none py-4">
+        <div className="display text-[22vw] leading-[0.95] tracking-tightest text-center text-bone/[0.05] whitespace-nowrap">
           BYTEFLOW
         </div>
       </div>

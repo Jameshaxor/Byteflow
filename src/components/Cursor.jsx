@@ -52,7 +52,7 @@ export default function Cursor() {
         className={`fixed top-0 left-0 z-[200] pointer-events-none rounded-full transition-[width,height,opacity] duration-500 ease-silk ${hover ? 'w-0 h-0 opacity-0' : 'w-1.5 h-1.5 bg-bone mix-blend-difference'}`} />
       <div ref={ring}
         className={`fixed top-0 left-0 z-[200] pointer-events-none rounded-full flex items-center justify-center mono text-[10px] uppercase tracking-[0.2em] transition-[width,height,background-color,color,border-color] duration-500 ease-silk ${
-          hover ? 'w-24 h-24 bg-lime text-ink border border-lime' : 'w-9 h-9 bg-transparent text-bone border border-bone/40 mix-blend-difference'
+          hover ? 'w-14 h-14 bg-lime text-ink border border-lime text-[9px]' : 'w-9 h-9 bg-transparent text-bone border border-bone/40 mix-blend-difference'
         }`}>
         {hover && label}
       </div>
